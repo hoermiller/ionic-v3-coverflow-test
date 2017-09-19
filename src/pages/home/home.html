@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides [initialSlide]="1" effect="coverflow">
+    <ion-slide *ngFor="let slide of slides">
+        <p>{{slide.text}}</p>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
